@@ -10,7 +10,7 @@ public class Wand extends Actor
 {
     
     public Wand(){
-        this.getImage().scale(465,20);
+        this.getImage().scale(100,20);
     }
     /**
      * Act - do whatever the Wand wants to do. This method is called whenever
