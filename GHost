@@ -1,4 +1,20 @@
-public void act() 
+
+public class PinkGhost extends Actor
+{
+    private String img;
+    private GifImage gif;
+    private boolean left;
+    private boolean right;
+    public PinkGhost()
+    {
+        this.img = img;
+        gif = new GifImage("PINKKghost.gif");
+        int scalePercent = 50;
+        
+
+    }
+
+    public void act() 
     {
         setImage( gif.getCurrentImage() );
         move(2);
@@ -14,3 +30,4 @@ public void act()
          
         
         }
+        }   
