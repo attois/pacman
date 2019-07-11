@@ -1,0 +1,16 @@
+public void act() 
+    {
+        setImage( gif.getCurrentImage() );
+        move(2);
+        Actor a = getOneObjectAtOffset(20,0,Wand.class);
+        if (a!=null){ 
+        int x = Greenfoot.getRandomNumber(3);
+       
+        if (x == 1) {this.setRotation(180); move(2);}
+        if(x == 2) {this.setRotation(270); move (2);}
+        if (x == 3) {this.setRotation(90); move(2);}
+    }
+         
+         
+        
+        }
