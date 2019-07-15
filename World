@@ -1,0 +1,171 @@
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+
+/**
+ * Write a description of class MyWorld here.
+ * https://stephan-meyer.net/kanboard/
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class MyWorld extends greenfoot.World
+{
+    public int punkte;
+    /**
+     * Constructor for objects of class MyWorld.
+     * 
+     */
+    public MyWorld()
+    {    
+        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+        super(600, 400, 1); 
+        Actor h = new Hintergrund();
+        addObject(h, 300, 200);
+        Actor w1 = new Wand();
+        addObject(w1, 108, 83);
+        Actor w7 = new Wand();
+        addObject(w7, 208, 83);
+        Actor w8 = new Wand();
+        addObject(w8, 308, 83);
+        Actor w9 = new Wand();
+        addObject(w9, 408, 83);
+        Actor w10 = new Wand();
+        addObject(w10, 500, 83);
+        
+        Actor w2 = new Wand();
+        addObject(w2, 108, 323);
+        Actor w3 = new Wand();
+        addObject(w3, 208, 323);
+        Actor w4 = new Wand();
+        addObject(w4, 308, 323);
+        Actor w5 = new Wand();
+        addObject(w5, 408, 323);
+        Actor w6 = new Wand();
+        addObject(w6, 500, 323);
+        
+        Actor a1 = new Wand();
+        addObject(a1, 108, 203);
+        Actor a2 = new Wand();
+        addObject(a2, 208, 203);
+        Actor a3 = new Wand();
+        addObject(a3, 308, 323);
+        Actor a4 = new Wand();
+        addObject(a4, 408, 203);
+        Actor a5 = new Wand();
+        addObject(a5, 500, 203);
+        
+        Actor b1 =new Wand();
+        b1.setRotation(90);
+        addObject(b1,110,93);
+        Actor b2 =new Wand();
+        b2.setRotation(90);
+        addObject(b2,260,185);
+        Actor b3 =new Wand();
+        b3.setRotation(90);
+        addObject(b3,260,218);
+        Actor b4 =new Wand();
+        b4.setRotation(90);
+        addObject(b4,440,185);
+        Actor b5 =new Wand();
+        b5.setRotation(90);
+        addObject(b5,498,215);
+        Actor b6 =new Wand();
+        b6.setRotation(90);
+        addObject(b6,350,320);
+        
+        
+        Actor r1 = new Wand();
+        addObject(r1, 50, 0);
+        Actor r2 = new Wand();
+        addObject(r2, 150, 0);
+        Actor r3 = new Wand();
+        addObject(r3, 200, 0);
+        Actor r4 = new Wand();
+        addObject(r4, 250, 0);
+        Actor r5 = new Wand();
+        addObject(r5, 300, 0);
+        Actor r6 = new Wand();
+        addObject(r6, 350, 0);
+        Actor r7 = new Wand();
+        addObject(r7, 400, 0);
+        Actor r8 = new Wand();
+        addObject(r8, 450, 0);
+        Actor r9 = new Wand();
+        addObject(r9, 500, 0);
+        Actor r10 = new Wand();
+        addObject(r10, 550 , 0);
+        
+        Actor r11 = new Wand();
+        addObject(r11, 50, 500);
+        Actor r12 = new Wand();
+        addObject(r12, 150, 500);
+        Actor r13 = new Wand();
+        addObject(r13, 200, 500);
+        Actor r14 = new Wand();
+        addObject(r14, 250, 500);
+        Actor r15 = new Wand();
+        addObject(r15, 300, 500);
+        Actor r16 = new Wand();
+        addObject(r16, 350, 500);
+        Actor r17 = new Wand();
+        addObject(r17, 400, 500);
+        Actor r18 = new Wand();
+        addObject(r18, 450, 500);
+        Actor r19 = new Wand();
+        addObject(r19, 500, 500);
+        Actor r20 = new Wand();
+        addObject(r20, 550 , 500);
+        
+        Actor r21 =new Wand();
+        r21.setRotation(90);
+        addObject(r21,0,50);
+        Actor r22 =new Wand();
+        r22.setRotation(90);
+        addObject(r22,0,150);
+        Actor r23 =new Wand();
+        r23.setRotation(90);
+        addObject(r23,0,200);
+        Actor r24 =new Wand();
+        r24.setRotation(90);
+        addObject(r24,0,250);
+        Actor r25 =new Wand();
+        r25.setRotation(90);
+        addObject(r25,0,300);
+        Actor r26 =new Wand();
+        r26.setRotation(90);
+        addObject(r26,0,350);
+        
+        Actor r31 =new Wand();
+        r31.setRotation(90);
+        addObject(r31,500,50);
+        Actor r32 =new Wand();
+        r32.setRotation(90);
+        addObject(r22,500,150);
+        Actor r33 =new Wand();
+        r23.setRotation(90);
+        addObject(r23,500,200);
+        Actor r34 =new Wand();
+        r34.setRotation(90);
+        addObject(r34,500,250);
+        Actor r35 =new Wand();
+        r35.setRotation(90);
+        addObject(r35,500,300);
+        Actor r36 =new Wand();
+        r36.setRotation(90);
+        addObject(r36,500,350);
+        
+        Actor a = new pacman();
+        addObject(a, 300, 200);
+        for (int j=20;j<=600;j=j+30){
+            for(int i=20;i<400;i=i+30){
+                Actor p = new Punkt();
+                addObject(p, j, i);
+                Actor p1 = new Punkt();
+            }
+        }
+        
+        showText("Sie haben " + punkte + " Punkte!", 100, 100);
+
+
+    }
+}
+
+
